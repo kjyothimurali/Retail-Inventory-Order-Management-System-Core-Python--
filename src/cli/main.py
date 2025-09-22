@@ -237,14 +237,9 @@ def build_parser():
     multi_cust = preport_sub.add_parser("multi-order-customers")
     multi_cust.set_defaults(func=lambda args: print(ReportingService().customers_with_multiple_orders(2)))
 
-
-
  
     return parser
-
-
-
-
+ 
  
 def main():
     parser = build_parser()
